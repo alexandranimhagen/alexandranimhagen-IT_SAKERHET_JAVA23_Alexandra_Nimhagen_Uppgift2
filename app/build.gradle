@@ -1,0 +1,76 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace "com.jwtuppg"
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.jwtuppg"
+        minSdk 21
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildFeatures {
+        compose true
+    }
+
+    composeOptions {
+        kotlinCompilerExtensionVersion "1.5.3"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    packagingOptions {
+        resources {
+            excludes += "/META-INF/{AL2.0,LGPL2.1}"
+        }
+    }
+}
+
+repositories {
+    google()
+    mavenCentral()
+}
+
+dependencies {
+    implementation platform("androidx.compose:compose-bom:2024.12.01")
+    implementation "androidx.compose.ui:ui"
+    implementation "androidx.compose.material3:material3"
+    implementation "androidx.compose.ui:ui-tooling-preview"
+    implementation 'androidx.navigation:navigation-runtime-ktx:2.8.5'
+    implementation 'androidx.compose.runtime:runtime-livedata:1.7.6'
+    implementation "androidx.navigation:navigation-compose:2.8.5"
+    testImplementation 'junit:junit:4.13.1'
+    debugImplementation "androidx.compose.ui:ui-tooling"
+
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.8.7"
+    implementation "androidx.activity:activity-compose:1.9.3"
+    implementation "androidx.compose.material3:material3"
+    androidTestImplementation "androidx.compose.ui:ui-test-junit4"
+    debugImplementation "androidx.compose.ui:ui-test-manifest"
+    implementation "androidx.compose.animation:animation:1.7.6"
+    implementation "androidx.compose.material:material-icons-core:1.7.6"
+    implementation "androidx.compose.material:material-icons-extended:1.7.6"
+
+    // Lägg till JJWT-biblioteket
+    implementation "io.jsonwebtoken:jjwt-api:0.11.5"
+    implementation "io.jsonwebtoken:jjwt-impl:0.11.5"
+    implementation "io.jsonwebtoken:jjwt-jackson:0.11.5"
+
+    // Lägg till jBCrypt
+    implementation 'org.mindrot:jbcrypt:0.4'
+}
