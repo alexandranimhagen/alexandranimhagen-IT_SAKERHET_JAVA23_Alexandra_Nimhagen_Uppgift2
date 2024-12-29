@@ -7,26 +7,9 @@ build/
 
 # Android Studio-specific
 .idea/
-*.iml
-*.apk
-*.dex
-*.class
-/out/
-captures/
-.externalNativeBuild/
-.cxx/
 
 # IntelliJ-specific
 .idea/
-*.ipr
-*.iws
-*.iml
-.idea/modules.xml
-.idea/*.iml
-.idea/vcs.xml
-.idea/workspace.xml
-.idea/gradle.xml
-.idea/libraries/
 
 # MacOS-specific
 .DS_Store
@@ -57,9 +40,9 @@ node_modules/
 *.test-output
 
 # Additional build folders
-git rm -r --cached .
-git add .
-git commit -m "Update .gitignore to exclude unnecessary files"
 build/
 bin/
 gen/
+
+# Ignorera allting i .idea
+.idea/
