@@ -54,23 +54,27 @@ dependencies {
     implementation 'androidx.navigation:navigation-runtime-ktx:2.8.5'
     implementation 'androidx.compose.runtime:runtime-livedata:1.7.6'
     implementation "androidx.navigation:navigation-compose:2.8.5"
-    testImplementation 'junit:junit:4.13.1'
+    testImplementation 'junit:junit:4.13.2'
     debugImplementation "androidx.compose.ui:ui-tooling"
 
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.8.7"
     implementation "androidx.activity:activity-compose:1.9.3"
-    implementation "androidx.compose.material3:material3"
     androidTestImplementation "androidx.compose.ui:ui-test-junit4"
     debugImplementation "androidx.compose.ui:ui-test-manifest"
     implementation "androidx.compose.animation:animation:1.7.6"
     implementation "androidx.compose.material:material-icons-core:1.7.6"
     implementation "androidx.compose.material:material-icons-extended:1.7.6"
 
-    // Lägg till JJWT-biblioteket
+    // JJWT-bibliotek för tokenhantering
     implementation "io.jsonwebtoken:jjwt-api:0.11.5"
     implementation "io.jsonwebtoken:jjwt-impl:0.11.5"
     implementation "io.jsonwebtoken:jjwt-jackson:0.11.5"
 
-    // Lägg till jBCrypt
+    // BCrypt för lösenordshantering
     implementation 'org.mindrot:jbcrypt:0.4'
+
+    // Extra beroenden för bättre debugging och testning
+    debugImplementation "androidx.compose.ui:ui-debug"
+    androidTestImplementation "androidx.test.ext:junit:1.2.1"
+    androidTestImplementation "androidx.test.espresso:espresso-core:3.6.1"
 }
