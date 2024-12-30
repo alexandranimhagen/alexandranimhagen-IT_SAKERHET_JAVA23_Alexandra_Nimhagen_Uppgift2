@@ -1,0 +1,50 @@
+# Gradle-specific
+.gradle/
+build/
+*.jar
+*.war
+*.ear
+
+# Android Studio- och IntelliJ-specific
+.idea/
+.idea/workspace.xml
+.idea/libraries/
+local.properties
+
+# MacOS-specific
+.DS_Store
+
+# Windows-specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Node.js (if you use Node scripts)
+node_modules/
+
+# Log and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# Kotlin-specific
+*.kts
+*.kotlin_module
+*.kotlin_cache
+
+# Android local keystores
+*.jks
+
+# Test result files
+*.test-result
+*.test-output
+
+# Additional build folders
+build/
+bin/
+gen/
+
+# Exclude repo-mirror
+repo-mirror/
