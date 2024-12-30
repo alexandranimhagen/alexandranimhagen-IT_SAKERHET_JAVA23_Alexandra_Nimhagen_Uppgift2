@@ -9,6 +9,8 @@ build/
 .idea/
 .idea/workspace.xml
 .idea/libraries/
+.idea/dataSources/
+.idea/dataSources.local/
 local.properties
 
 # MacOS-specific
